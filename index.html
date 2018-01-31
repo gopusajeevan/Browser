@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body id="body" style="margin:20px 25px">
+    <div id="browser">
+    <!--Header-->
+		<div class="head-container">
+        	<div class="head-row">
+            	<div class="top-panel left-panel">
+                	<a href="javascript:closebrowser()" class="browser-control close"></a>
+                 	<a href="javascript:collapse()" class="browser-control restore"></a>
+                 	<a href="javascript:expand()" class="browser-control minimize"></a>
+                </div>
+                <div class="top-panel middle-Panel">
+                	   <div class="tabs">    
+                       <div class="tab">
+                           <input type="radio" id="tab-1" name="tab-group-1" checked>
+                           <img src="images/chrome.png" class="favicon-chrome">
+                           <label for="tab-1">Chrome</label>                           
+                       </div>
+                       <div id="clonetab">
+                         <div class="tab">
+                             <input type="radio" id="tab-2" name="tab-group-1">
+                             <img src="images/newtab.png" class="favicon-newtab">
+                             <label for="tab-2">New Tab</label>
+
+                         </div>
+                       </div>
+                     </div>
+                      <div class=""> 
+                       <div class="tab">
+                           <input type="radio" id="tab-10" name="tab-group-1">
+                           <button id="tabbutton" onlick="newtab()">+</button>
+                       </div>                        
+                    </div>      
+                </div>
+                <div class="top-panel right-panel">
+                	<a href="javascript:expand()"><img src="images/expand.png" class="expand-icon float-right"></a>                  
+                </div>
+           </div>
+           <div class="head-row-two">
+                <div class="top-panel bottom-left-panel page-control">
+                	<a href="#" class="page-control-icon"><img src="images/back.png"></a>
+                    <a href="#" class="page-control-icon"><img src="images/forward.png"></a>
+                    <a href="index.html" class="page-control-icon"><img src="images/refresh.png"></a>
+                     <a href="#" class="page-control-icon"><img src="images/home.png"></a>
+                </div>
+                <div class="top-panel bottom-middle-panel">
+                	<div class="url-text-box ">
+                    	<!--<img src="images/lock.png"/>-->
+                    	<input type="text" id="urlbox" value="https://www.google.com/intl/en/chrome/browser/"/>
+                        <a href="#"> <img src="images/star.png" /></a>
+                    </div>
+                </div>
+                <div class="top-panel bottom-right-panel">
+                    <a href="#"><img src="images/bar.png" class="float-right"></a>
+                 </div>
+            </div>
+        </div>
+        <!--HeaderEnds-->
+        <!--Content-->
+        <div class="content-container">
+        	<div class="content-row">
+            	<div class="content-center">
+                <img src="images/google.png">
+                <div class="text-box ">                      
+                    <input type="text"/>                        
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--ContentEnds-->
+      </div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
