@@ -1,2 +1,3 @@
 # Browser
-HTML Browser
+Browser using HTML CSS and JavaScript.
+
